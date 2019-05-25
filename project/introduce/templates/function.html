@@ -1,0 +1,95 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <title>likelion_assignment</title>
+
+</head>
+
+<style>
+    body{
+       background-color: grey
+    }
+    p { margin:20px 0px; }
+</style>
+
+<body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <a class="navbar-brand" href="{%url 'index' %}"><h3>Likelion</h3></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="{% url 'about' %}"><h2>소개</h2></a>
+                                </li>
+                        
+                                
+                                <li class="nav-item active">
+                                        <a class="nav-link" href="{%url 'function' %}"><h2>주요기능</h2><span class="sr-only">(current)</span></a>
+                                      </li>
+
+
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="{%url 'a' %}"><h2>각오</h2></a>
+                                      </li>
+
+                                </li>
+                              </ul>
+                             
+                            </div>
+                          </nav>
+                          
+<div class="container">
+    <div style="text-align:center">
+<div class="row">
+    
+<div class="col-lg-4">
+    <img width="200" height="200" class="img-circle" alt="Generic placeholder image" src="https://roadsense.org.au/wp-content/uploads/2018/07/294320.jpg">
+    <h1><br>[ 경험담 및 해결방안 ]</h1>
+    <h3> 사용자들이 직접 겪었던 경험담과 <br>어떻게 해결했는지에 대해 
+                    <br>공유하는 게시판을 개설하여 정보전달의 기능을 보완한다.
+    </h3>
+</div>
+
+
+<div class="col-lg-4">
+    <img width="200" height="200" class="img-circle" alt="Generic placeholder image" src="https://www.cerebralpalsyguidance.com/wp-content/uploads/2016/01/lawyer.jpg">
+<h1><br>[ 전문가 상담 ]</h1>
+<h3>네이버의 지식인 서비스처럼 질문을 게시하면 해당 분야의 전문가가 답글을 달아주는 방식이다. <br>전문가 본인의 홍보도 겸할 수 있기 때문에 질답이 활발히 이뤄질 수 있을 것이다.</h3>
+
+</div>
+
+<div class="col-lg-4">
+    <img width="200" height="200" class="img-circle" alt="Generic placeholder image" src="data:image/jpeg;base64,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">
+   <h1><br>[ HashTag ]</h1>
+    <h3>해쉬태그기능을 이용하여 주요 키워드를 <br>쉽게 검색할 수 있도록 한다.
+        <br>특히 비슷한 사례의 경우를 찾을 때 <br>유용히 쓰일 수 있다.
+    </h3>
+</div>
+
+</div>
+</div>
+</div>
+                          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+                          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+                          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
